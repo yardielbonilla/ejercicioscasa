@@ -1,8 +1,9 @@
 //Bonilla Galicia Yardiel//
-//practica  #6
+//practica  #7
 //ejercicio de casa
 //visual studio 2017 
 // generar el sismtema solar con lunas 
+//con materiales y reflejos
 #include "Main.h"
 
 DWORD dwFrames = 0;
@@ -126,7 +127,7 @@ void display(void)
 	glTranslatef(0.0, 0.0, -5.0);
 
 	glPushMatrix(); //Esfera que representa a nuestra fuente de Luz
-					//Este c骴igo es para que la fuente de luz gire
+					//Este c贸digo es para que la fuente de luz gire
 
 	if (positional)
 	{
@@ -467,13 +468,13 @@ int main(int argc, char** argv)   // Main Function
 {
 	glutInit(&argc, argv); // Inicializamos OpenGL
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
-	glutInitWindowSize(500, 500);	// Tama駉 de la Ventana
+	glutInitWindowSize(500, 500);	// Tama帽o de la Ventana
 	glutInitWindowPosition(20, 60);	//Posicion de la Ventana
 	glutCreateWindow("Practica 6"); // Nombre de la Ventana
 	InitGL();						// Parametros iniciales de la aplicacion
-	glutDisplayFunc(display);  //Indicamos a Glut funci髇 de dibujo
-	glutReshapeFunc(reshape);	//Indicamos a Glut funci髇 en caso de cambio de tamano
-	glutKeyboardFunc(keyboard);	//Indicamos a Glut funci髇 de manejo de teclado
+	glutDisplayFunc(display);  //Indicamos a Glut funci贸n de dibujo
+	glutReshapeFunc(reshape);	//Indicamos a Glut funci贸n en caso de cambio de tamano
+	glutKeyboardFunc(keyboard);	//Indicamos a Glut funci贸n de manejo de teclado
 	glutSpecialFunc(arrow_keys);	//Otras
 	glutIdleFunc(animacion);
 	glutMainLoop();          // 
