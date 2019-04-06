@@ -1,3 +1,8 @@
+//Bonilla Galicia Yardiel//
+//practica  #7
+//ejercicio de casa
+//visual studio 2017 
+// realizar un tablero de ajedrez con blancos transparentes
 #include "texture.h"
 
 float pos_camX = 0, pos_camY = 0, pos_camZ = -5;
@@ -68,14 +73,14 @@ void prisma(GLuint textura1, GLuint textura2)  //Funcion creacion prisma
 {
 
 	GLfloat vertice[8][3] = {
-				{0.5 ,-0.5, 0.5},    //Coordenadas Vértice 0 V0
-				{-0.5 ,-0.5, 0.5},    //Coordenadas Vértice 1 V1
-				{-0.5 ,-0.5, -0.5},    //Coordenadas Vértice 2 V2
-				{0.5 ,-0.5, -0.5},    //Coordenadas Vértice 3 V3
-				{0.5 ,0.5, 0.5},    //Coordenadas Vértice 4 V4
-				{0.5 ,0.5, -0.5},    //Coordenadas Vértice 5 V5
-				{-0.5 ,0.5, -0.5},    //Coordenadas Vértice 6 V6
-				{-0.5 ,0.5, 0.5},    //Coordenadas Vértice 7 V7
+				{0.5 ,-0.5, 0.5},    //Coordenadas VÃ©rtice 0 V0
+				{-0.5 ,-0.5, 0.5},    //Coordenadas VÃ©rtice 1 V1
+				{-0.5 ,-0.5, -0.5},    //Coordenadas VÃ©rtice 2 V2
+				{0.5 ,-0.5, -0.5},    //Coordenadas VÃ©rtice 3 V3
+				{0.5 ,0.5, 0.5},    //Coordenadas VÃ©rtice 4 V4
+				{0.5 ,0.5, -0.5},    //Coordenadas VÃ©rtice 5 V5
+				{-0.5 ,0.5, -0.5},    //Coordenadas VÃ©rtice 6 V6
+				{-0.5 ,0.5, 0.5},    //Coordenadas VÃ©rtice 7 V7
 	};
 
 
@@ -437,14 +442,14 @@ int main(int argc, char** argv)   // Main Function
 {
 	glutInit(&argc, argv); // Inicializamos OpenGL
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
-	glutInitWindowSize(5000, 5000);	// Tamaño de la Ventana
+	glutInitWindowSize(5000, 5000);	// TamaÃ±o de la Ventana
 	glutInitWindowPosition(0, 0);	//Posicion de la Ventana
 	glutCreateWindow("Practica 9"); // Nombre de la Ventana
 	//glutFullScreen     ( );         // Full Screen
 	InitGL();						// Parametros iniciales de la aplicacion
-	glutDisplayFunc(display);  //Indicamos a Glut función de dibujo
-	glutReshapeFunc(reshape);	//Indicamos a Glut función en caso de cambio de tamano
-	glutKeyboardFunc(keyboard);	//Indicamos a Glut función de manejo de teclado
+	glutDisplayFunc(display);  //Indicamos a Glut funciÃ³n de dibujo
+	glutReshapeFunc(reshape);	//Indicamos a Glut funciÃ³n en caso de cambio de tamano
+	glutKeyboardFunc(keyboard);	//Indicamos a Glut funciÃ³n de manejo de teclado
 	glutSpecialFunc(arrow_keys);	//Otras
 	glutIdleFunc(animacion);
 	glutMainLoop();          // 
